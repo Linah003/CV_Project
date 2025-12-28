@@ -1,0 +1,8 @@
+fastapi==0.110.0
+uvicorn==0.29.0
+tensorflow==2.13.0
+numpy
+opencv-python
+pillow
+python-multipart
+jinja2
