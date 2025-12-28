@@ -78,9 +78,3 @@ The project can be executed on:
 2. Add the dataset as an input.
 3. Run all cells to train or load the model.
 4. Use the FastAPI interface for inference if deployed.
-
----
-
-## 📌 Notes
-- The project focuses on Computer Vision–based violence detection.
-- The model section will be updated once the final architecture is selected.
