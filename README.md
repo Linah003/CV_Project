@@ -1,4 +1,4 @@
-# Draa (درء) – CCTV Violence Detection Using Computer Vision
+# Draa (درء) – Violence Detection System Using Computer Vision
 
 ## 📌 Project Overview
 Draa (درء) is a Computer Vision–based project for detecting violent activities in CCTV surveillance videos.  
