@@ -28,7 +28,7 @@ SEQUENCE_LENGTH = 15
 CLASSES_LIST = ["Normal", "Violence"] 
 TEMPORAL_WINDOW_SIZE = 5
 TEMPORAL_THRESHOLD = 0.6
-MODEL_PATH = "./model.keras"
+MODEL_PATH = "./cctvmodel.keras"
 # =============== INITIALIZE APP ===============
 app = FastAPI(title="Draa - Violence Detection")
 
@@ -46,7 +46,7 @@ os.makedirs("uploads", exist_ok=True)
 os.makedirs("static", exist_ok=True)
 
 # Mount static files
-app.mount("/static", StaticFiles(directory="."), name="static")
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # =============== LOAD MODEL ===============
 try:
@@ -1569,4 +1569,5 @@ if __name__ == "__main__":
     print("📍 URL: http://localhost:8000")
     print("📊 Incidents: http://localhost:8000/incidents")
     print("=" * 60)
+
     uvicorn.run(app, host="0.0.0.0", port=8000)
